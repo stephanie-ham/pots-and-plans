@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  potsandplans.api:
+    image: ${DOCKER_REGISTRY-}potsandplans
+    build:
+      context: .
+      dockerfile: PotsAndPlans.API/Dockerfile
